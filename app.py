@@ -11,7 +11,8 @@ import plotly.graph_objs as go
 n_steps = 12  # Ventana temporal
 
 # --- Cargar modelo y scaler ---
-model = load_model('./model/modelo_lstm.h5')  # Ajusta si el nombre es diferente
+
+model = load_model('./model/modelo_lstm.h5', compile=False)  # cambio aquí para evitar erroeres en Railway con compile
 scaler = joblib.load('./model/scaler.gz')
 
 # --- Cargar dataset procesado ---
