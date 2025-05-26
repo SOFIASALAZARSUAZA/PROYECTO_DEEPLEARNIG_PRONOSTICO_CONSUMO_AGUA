@@ -23,7 +23,7 @@ app = dash.Dash(__name__)
 app.title = "Predicción de Consumo de Agua"
 
 app.layout = html.Div([
-    html.Img(src='/figs/ans_banner_1920x200.png', style={'width': '100%', 'height': 'auto'}),
+    html.Img(src='/assets/ans_banner_1920x200.png', style={'width': '100%', 'height': 'auto'}),
     html.H1("Predicción de Consumo de Agua - Selecciona horizonte"),
     dcc.Slider(
         id='slider-meses',
